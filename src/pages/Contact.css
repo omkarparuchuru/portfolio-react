@@ -1,0 +1,107 @@
+/* Fullscreen Background - Same as Home */
+.contact-container {
+  z-index: 1;
+  max-width: 800px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Contact Form - Same Glassmorphism Style */
+.contact-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Title - Similar to Home Page */
+.contact-box h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Input Fields */
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover & Focus Effects */
+.contact-box input:focus,
+.contact-box textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Button - Same Style as 'Explore My Work' */
+.contact-box button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #ffcc00; /* Same Yellow as Home Page */
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button Hover Effect */
+.contact-box button:hover {
+  background: #e6b800;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(255, 204, 0, 0.5);
+}
+
+/* Social Icons - Matching Home Page */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  color: white;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.2);
+  color: #ffcc00; /* Matches Button */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .contact-box {
+    padding: 30px;
+  }
+  .contact-box h2 {
+    font-size: 1.5rem;
+  }
+}
