@@ -9,7 +9,7 @@ import "./App.css"; // Import the CSS file
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/portfolio-react">
       <div className="app-container">
         <Navbar />
         <div className="content-wrapper">
