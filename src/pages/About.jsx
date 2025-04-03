@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css"; // Import the CSS file
+import aboutImg from "../assets/about.jpg";
 
 const About = () => {
   return (
@@ -9,11 +10,15 @@ const About = () => {
         Hello! I am a beginner web developer learning React.
         I love building websites and exploring new technologies.
       </p>
-      <img 
-        src="src/assets/blurwall.jpeg" 
+      {/* <img 
+        src="../assets/blurwall.jpeg" 
         alt="Profile" 
         className="about-image"
-      />
+      /> */}
+      <img src={aboutImg} 
+      alt="About Us" 
+      className="about-image"
+      />;
     </div>
   );
 };
